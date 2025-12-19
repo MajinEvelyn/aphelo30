@@ -1,0 +1,186 @@
+meta:
+  engine: 4.1.0
+units:
+  px: cx + 2
+  py: cy + 2
+  $default_width: 18
+  $default_height: 17
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [100, -100]
+      key:
+        padding: 1cy
+        spread: 1cx
+      columns:
+        pinky:
+          key:
+            splay: 33
+          rows:
+            top:
+              column_net: P9
+            home:
+              column_net: P8
+            bottom:
+              column_net: P7
+        ring:
+          key:
+            stagger: 7
+            splay: -15
+            spread: 21
+          rows:
+            top:
+              column_net: P6
+            home:
+              column_net: P5
+            bottom:
+              column_net: P4
+        middle:
+          key:
+            stagger: 0
+            splay: -18
+            spread: 21
+          rows:
+            top:
+              column_net: P3
+            home:
+              column_net: P2
+            bottom:
+              column_net: P10
+        index:
+          key:
+            stagger: -5
+            splay: 0
+          rows:
+            top:
+              column_net: P16
+            home:
+              column_net: P14
+            bottom:
+              column_net: P15
+        inner:
+          key:
+            stagger: -5
+          rows:
+            top:
+              column_net: P18
+            home:
+              column_net: P19
+            bottom:
+              column_net: P20
+      rows:
+        top:
+        home:
+        bottom:
+outlines:
+  bweh:
+    - what: rectangle
+      size: [cx, cy]
+      where: true
+  bloc:
+    - what: rectangle
+      operation: stack
+      size: [113, 82]
+      adjust.shift: [1.1 sx, -0.9 sy]
+      fillet: 2
+  combo:
+    - name: bloc
+    - operation: subtract
+      name: bweh
+pcbs:
+  aphelo30:
+    template: kicad8
+    outlines:
+      main:
+        outline: bloc
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          from: GND
+          to: "{{column_net}}"
+          include_corner_marks: true
+          include_keycap: true
+          keycap_height: 16.5
+          keycap_width: 17.5
+          reversible: true
+          solder: true
+          hotswap: true
+          choc_v2_support: false
+          outer_pad_width_front: 2.0
+          outer_pad_width_back: 2.0
+      mcu:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: matrix_inner_bottom
+        params:
+          reversible: true
+          only_required_jumpers: true
+        adjust:
+          shift: [-6, -53]
+          rotate: -90
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: matrix_middle_top
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [-64.5, -12]
+          rotate: 180
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where: matrix_middle_top
+        params:
+          reversible: true
+        adjust:
+          shift: [-64, -23]
+          rotate: 90
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: matrix_middle_bottom
+        params:
+          reversible: true
+        adjust:
+          shift: [-26,-68]
+          rotate: 125
+      m2_screw_1:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_middle_top
+        adjust:
+          shift: [-63,-35]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_2:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_middle_top
+        adjust:
+          shift: [-63,40]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_3:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_middle_top
+        adjust:
+          shift: [44,40]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+      m2_screw_4:
+        what: ceoloide/mounting_hole_npth
+        where: 
+          ref: matrix_middle_top
+        adjust:
+          shift: [8,-35]
+        params:
+          hole_size: 4.6
+          hole_drill: 2.2
+cases:
