@@ -8,7 +8,7 @@ Named for the *Aphelocoma* genus of scrub jay birds.
 - Nice! Nano v2 controlled
 - Reversible PCB
 - 30 keys
-- Choc v1 Switches
+- Choc v1 Switches with hotswap sockets
 - No thumb keys
 - Aggressive splay
 
