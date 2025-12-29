@@ -7,14 +7,16 @@ Named for the *Aphelocoma* genus of scrub jay birds.
 - ZMK powered BLE wireless
 - Nice! Nano v2 controlled
 - Reversible PCB
-- 30 keys
+- 30 keys in 3x5 configuration
 - Choc v1 Switches with hotswap sockets
 - No thumb keys
 - Aggressive splay
 
+## Overview
+
 This weird combination of features is designed for my hands, which no currently existing boards accommodate. I have RSI issues in both of my thumbs, to the point that even single thumb key layouts don't work for me. Aside from this, the aggressive splay and finger positions were made with Ergopad, and recreated in Ergogen. 
 
-In this repo you will find all files related to the design process, including the Ergogen config, KiCAD files and related Gerbers. Unfortunately, I was only able to get the PCB to a 115x85mm footprint with this splay, so a little outside of the <100x100mm discount size for JLCPCB.
+In this repo you will find all files related to the design process, including the Ergogen config, KiCAD files and related Gerbers. Unfortunately, I was only able to get the PCB to a 115x85mm footprint with this splay, so a little outside of the <100x100mm discount size for JLCPCB. Despite this and the expensive microcontroller, you should be able to build this board for somewhere between 80-120$.
 
 ## BOM
 
