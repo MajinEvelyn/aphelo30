@@ -30,8 +30,8 @@ In this repo you will find all files related to the design process, including th
 | Choc v1 Hotswap Sockets | 30 | |
 | Choc v1 Keycaps | 30 | |
 | Power Switch | 2 | |
-| Reset Switch | 2 | |
+| Reset Switch (optional) | 2 | |
 | 110mah LiPo Battery | 2 | |
 | Bumpons | 8 | |
-| M2(x?) Screws | 8 | |
+| M2(x8) Screws | 8 | |
 | M2 Heat Set Inserts | 8 | |
