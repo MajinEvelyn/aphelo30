@@ -1,6 +1,6 @@
 # aphelo30
 
-![scrub jay](https://github.com/MajinEvelyn/aphelo30/blob/main/img%2Fcalifornia%20scrub%20jay.jpg)
+![scrub jay](https://github.com/MajinEvelyn/aphelo30/blob/main/img/scrub%20jay.jpg)
 
 Named for the *Aphelocoma* genus of scrub jay birds. 
 
