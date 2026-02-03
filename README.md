@@ -34,14 +34,14 @@ ZMK: https://github.com/MajinEvelyn/zmk-config-aphelo30
 
 | Name | Count | Notes |
 | ---- | ----- | ---------- |
-| PCB | 2 | |
+| PCB | 2 | These are reversible, so either PCB works with either half. |
 | Nice! Nano v2 MCU | 2 | |
 | Choc v1 Switches | 30 | |
 | Choc v1 Hotswap Sockets | 30 | |
 | Choc v1 Keycaps | 30 | |
 | Power Switch | 2 | |
-| Reset Switch (optional) | 2 | |
-| 110mah LiPo Battery | 2 | |
-| Bumpons | 8 | |
-| M2(x8) Screws (countersunk) | 8 | |
+| Reset Switch | 2 | You can omit these if you are fine with using ZMK reset behavior or shorting RST pins to reflash firmware. |
+| 110mah LiPo Battery | 2 | There is plenty of space for other batteries inside the case, but I have not tested others. |
+| Bumpons | 8 | Size is up to your preference. |
+| M2(x8mm) Screws | 8 | Countersunk screws are best, they will seat perfectly into the chamfered holes in the bottom case. |
 | M2 Heat Set Inserts | 8 | |
