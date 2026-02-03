@@ -27,6 +27,9 @@ In this repo you will find all files related to the design process, including th
 There are 4 bosses for heat set inserts on the underside of each half's top case. Press them into each boss with a soldering iron, and use your M2 screws through the holes in the bottom case to screw into the heat set inserts.
 There are heat set insert soldering tips available for pretty cheap to make this process easy, but I've heard this is easy enough with typical soldering iron tips.
 
+## Firmware
+ZMK: https://github.com/MajinEvelyn/zmk-config-aphelo30
+
 ## BOM
 
 | Name | Count | Notes |
