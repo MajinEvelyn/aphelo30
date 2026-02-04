@@ -1,6 +1,7 @@
 # aphelo30
 
-![desk pic](https://github.com/MajinEvelyn/aphelo30/blob/main/img/aphelo%20desk.jpg)
+![desk pic 1](https://github.com/MajinEvelyn/aphelo30/blob/main/img/shot%204.JPG)
+![desk pic 2](https://github.com/MajinEvelyn/aphelo30/blob/main/img/shot%208%20cropped.JPG)
 
 Pictured with Chicago Steno keycaps by [Asymplex](https://www.asymplex.xyz/), case printed in Cream PETG-HF.
 
