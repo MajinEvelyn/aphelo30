@@ -2,6 +2,8 @@
 
 ![desk pic](https://github.com/MajinEvelyn/aphelo30/blob/main/img/aphelo%20desk.jpg)
 
+Pictured with Chicago Steno keycaps by [Asymplex](https://www.asymplex.xyz/), case printed in Cream PETG-HF.
+
 ## Design Parameters
 - Full split
 - ZMK powered BLE wireless
